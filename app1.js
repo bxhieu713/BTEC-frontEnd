@@ -34,10 +34,6 @@ while (check) {
                 }
             }
             console.table(arr2);
-
-            // for(i of arr) {
-            //     if(n.indexOf(i)==-1)
-            // }
             break;
         case "0":
             check = false;
