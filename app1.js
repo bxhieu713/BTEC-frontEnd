@@ -17,9 +17,10 @@ while (check) {
             alert('Tu da duoc update');
             break;
         case "D":
-            arr.splice(prompt("Nhap index can xoa:"), 1);
+            let d = prompt("Nhap index can xoa:");
             let result = confirm("Do you want to delete?");
             if (result) {
+                arr.splice(d, 1);
                 alert("Xóa thành công");
             } else {
                 alert("Đã hủy thao tác xóa");
