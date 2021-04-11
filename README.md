@@ -41,7 +41,7 @@ b. Tìm giá trị lớn nhất có thể đạt được của hiệu 2 số b�
 trong mảng đó
 Ví dụ:
 
-Input: [1, 2, 3, 8, 9]
+Input: [1, 2, 3, 8, 9] 
 Output: 8 (là hiệu của 9 và 1)
 
 9. Cho người dùng nhập vào string dạng 1,2,3,4,5,6
