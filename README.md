@@ -1,59 +1,64 @@
-Luyện tập array
+Bài tập về mảng 1 chiều (ArrayAdvanced)
 
-	1. Cho người dùng nhập vào 2 số x, y
-	a. Tạo một mảng với các số từ  x - y cách nhau 2 đơn vị
-	b. Tính trung bình cộng các số trong mảng
+	1.	Nhập vào 1 dãy số, mỗi số ngăn cách nhau bởi dấu “,”. Hãy tìm:
+	a.	Số lớn thứ 2 trong dãy
+	Input	Output
+	3,4,2,1,5	4
+	10,33,16,9,24	24
 
-	2. Cho người dùng nhập vào 1 dãy số dạng string (VD: 1,2,3,4,5)
-	a. Biến chuỗi đó thành mảng
-	b. Tính tổng các số chẵn trong mảng, Tính tổng các số lẻ trong mảng
-	c. Tìm max, min của các số trong mảng đó
+	b.	Số bé thứ 2 trong dãy
+	Input	Output
+	3,4,2,1,5	2
+	10,33,16,9,24	10
 
-	3. Cho mảng [1, 2, 4, 6, [3, 5], [10, 12]]
-	a. Tính tổng tất cả các phần tử trong mảng
-	b. Tạo ra 1 mảng mới chỉ là 1 mảng đơn(không chứa mảng khác ở trong) chứa tất cả
-	 các phần tử đã được tăng lên 10 đơn vị
+	c.	Vị trí các số nguyên tố có trong dãy, nếu không có số nào in ra NOT FOUND
+	Input	Output
+	5,9,11,8,2	0,2,4
+	8,12,6	NOT FOUND
 
-	4. Cho người dùng nhập vào 1 dãy số dạng string (VD: 1,2,2,1,3,3,4)
-	a. Biến chuỗi đó thành mảng
-	b. Tạo ra 1 mảng mới gồm các phần tử của mảng cũ không được lặp lại 2 lần.
-	VD [1,2,3,3] => [1,2,3]
+	d.	Phần tử trung vị của dãy
+	Phần tử trung vị của 1 dãy số đã được sắp xếp:
+	Nếu độ dài của dãy số đó là M (M là số lẻ) thì phần tử trung vị là số nằm chính giữa của dãy số
 
-	5. Cho người dùng nhập vào 1 câu bất kỳ, Biến câu đó thành 1 
-	câu in hoa tất cả các chữ cái đầu tiên 
-	VD: input = "my name is peter" => output = "My Name Is Peter"
+	Input	Output
+	3,1,2,5,4	3
+	7,12,9,22,15	12
 
-	6. Cho người dùng nhập vào số n,
-	Cho người dùng nhập vào 1 string dạng 1,2,3,4,5
-	a. Biến string đó thành mảng
-	b. Tạo ra 1 mảng mới gồm n phần tử đầu tiên của mảng cũ
+	Nếu độ dài của dãy số đó là N (N là số chẵn) thì phần tử trung vị là trung bình cộng của 2 số nằm chính giữa của dãy số
+	Input	Output
+	1,2,3,4	2.5
+	5,6,12,15	9
 
-	7. Cho người dùng nhập vào số n,
-	Cho người dùng nhập vào 1 string dạng 1,2,3,4,5...
-	a. Biến string đó thành mảng
-	b. Nhóm mảng cũ thành một mảng mới gồm các mảng con theo n
-	VD: [1,2,3,4,5], n = 2 => [[1,2],[3,4], [5]] 
-			[1,2,3,4,5,6], n = 3 => [1,2,3],[4,5,6]]
+	e.	Các cặp số có tổng bằng 5 trong dãy và in ra màn hình console. Nếu không có cặp số nào thỏa mãn, in ra NOT FOUND
+	Input	Output
+	1,2,3,4	(1,4)
+	(2,3)
+	3,5,4,7,10	NOT FOUND
 
-	8. Cho người dùng nhập vào string dạng 1,2,3,4,5,6
-	a. Biến string đó thành mảng
-	b. Tìm giá trị lớn nhất có thể đạt được của hiệu 2 số bất kì 
-	trong mảng đó
-	Ví dụ:
+	2.	Nhập vào 1 dãy các chuỗi (string), mỗi string cách nhau bởi dấu “,”. Tìm trong dãy đó những string đối xứng, in ra vị trí các string đó. Nếu không có string nào thỏa mãn, in ra NOT FOUND
+	Input	Output
+	abbc,cddc,aeew	1
+	adada,bfdf,ethte	0,2
+	abc,defg	NOT FOUND
 
-	Input: [1, 2, 3, 8, 9] 
-	Output: 8 (là hiệu của 9 và 1)
+	3.	Mảng 2 chiều: là những phần tử của mảng là 1 mảng. Ví dụ:
+	[
+		[1, 2, 3],
+		[4, 5, 6],
+		[7, 8, 9]
+	]
+	Ma trận là 1 ứng dụng thực tế của mảng 2 chiều:
+	1 2 3
+	4 5 6
+	7 8 9
 
-	9. Cho người dùng nhập vào string dạng 1,2,3,4,5,6
-	a. Biến string đó thành mảng
-	b. Tìm các số có số lần lặp lại nhiều nhất trong mảng đó
-	Ví dụ:
-	Input: [1,2,3,4,1,2,2,1]
-	Output: [1,2]
+	Hãy thiết lập 1 mảng 2 chiều (các phần tử là số nguyên):
+	a.	In ra ma trận tương ứng
+	b.	Tính tổng từng hàng của ma trận và in ra màn hình
+	c.	Tính tổng từng cột của ma trận và in ra màn hình
+	d.	Tính 2 đường chéo của ma trận vuông (n x n)
+	e.	Tìm số nhỏ nhất/lớn nhất trong ma trận
+	f.	Tính tổng các số dương/âm trong ma trân
 
-	10. Cho người dùng nhập vào 1 chuỗi bất kỳ
-	Kiểm tra xem chuỗi đó có phải dạng palindrome không 
-	Ví dụ: "eye" đảo ngược === "eye" => palindrome
-	"racecar" đảo ngược === "racecar" => palindrome
-	Nếu đúng là dạng đó => In ra correct
-	Nếu không => In ra false
+	
+
