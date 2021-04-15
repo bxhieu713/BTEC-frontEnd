@@ -1,0 +1,13 @@
+th,td  {
+    border:black 2px solid;
+  border-bottom-color:silver;
+  border-right-color:silver;
+}
+
+table {
+    font-size:30px;
+}
+
+h2 {
+    text-align: center;
+}
