@@ -1,0 +1,55 @@
+#bl1 {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin-top: 20px;
+}
+
+#bl2 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 20px;
+}
+
+.class3 {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#bl3a {
+    background-color: blueviolet;
+}
+
+#bl3b {
+    background-color: rgb(53, 170, 141);
+}
+
+#bl4 {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: yellowgreen;
+    margin-top: 20px;
+}
+
+.b1 {
+    display: inline-block;
+}
+
+.b2 {
+    position: absolute;
+    top: 3px;
+    right: 20px;
+}
+
+.b4 {
+    position: absolute;
+    right: 20px;
+    bottom: 3px;
+}
+
+.container {
+    position: relative;
+}
